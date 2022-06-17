@@ -15,7 +15,3 @@ class Login(models.Model):
     Roles = models.CharField(max_length=500)
     Password = models.CharField(max_length=1000)
     Salt = models.CharField(max_length=1000)
-     
- 
- 
- 
