@@ -10,7 +10,7 @@ from list.serializers import InformationSerializer, LoginSerializer, TODOIListSe
 
 
 @csrf_exempt
-def viewall(request):
+def viewall(request,Email):
     todolist = TODOIList.objects.all()
     todolist_serializer=TODOIListSerializer(todolist,many=True)
     return JsonResponse(todolist_serializer.data,safe=False)
